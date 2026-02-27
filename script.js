@@ -1,12 +1,4 @@
-const urIGAS = "https://script.google.com/macros/s/AKfycbxb54iTocoLK6RwX3T1RKvA22PWh1xGZkNReMtLBsmp0StTlWFtJwhgu6WGt6_OAcv-/exec";
-
-function kirimData(data) {
-    fetch(urlGAS, {
-        method: "POST",
-        mode: "no-cors",
-        body:JSON.stringify(data)
-    })
-    .then(() => alert("Berhasil Terkirim ke google sheet!"))
-    .catch(err => console.error("Error:", err));
-}
-
+fetch('https://script.google.com/macros/s/AKfycbznJ33udI2ym8cHXVd6Xdpipqh9AVJCq5C9pNu7pWnAQqILDGRu6BTpkuzi_KfrTQux/exec', {
+  method: 'POST',
+  body: JSON.stringify(data)
+})
